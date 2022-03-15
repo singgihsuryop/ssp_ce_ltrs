@@ -1,8 +1,16 @@
 # ssp_ce_flutter
 
-A new Flutter project.
+Child Education Flutter Project.
 
-## Getting Started
+## Build
+./gradlew clean build
+
+## Testing
+This project is actively tested using devices below:
+- Nexus 6 API 28 Android Emulator
+- Samsung Galaxy S8 Android 8.0.0
+
+## Getting Started with Flutter
 
 This project is a starting point for a Flutter application.
 
