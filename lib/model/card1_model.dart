@@ -27,7 +27,7 @@ var cardData = [
   },
   {
     "cardImage": "new-feature-soon.png",
-    "cardTitle": "Fitur lebih banyak akan segera hadir",
+    "cardTitle": "Informasi lainnya",
     "cardBackground": 0xFFFF70A3,
     "cardPage": ""
   }

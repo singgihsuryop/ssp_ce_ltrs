@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ssp_ce_flutter/component_wrapper.dart';
+import 'package:ssp_ce_flutter/learn_speech/speech_page_layout.dart';
 import 'package:ssp_ce_flutter/sound.dart';
 import 'package:ssp_ce_flutter/sound_populator.dart';
 
@@ -16,11 +18,31 @@ class AnimalSpeechPage extends StatefulWidget {
 }
 
 class _MyAppState extends State<AnimalSpeechPage> {
-  List<Flexible> dataPerRow = [];
   final SoundPopulator soundPopulator = SoundPopulator();
 
   @override
   Widget build(BuildContext buildContext) {
+    double screenWidth = MediaQuery.of(buildContext).size.width;
+    double screenHeight = MediaQuery.of(buildContext).size.height;
+    Orientation orientation = MediaQuery.of(buildContext).orientation;
+
+    double bigButtonHeight = 0;
+    double bigButtonWidth = 0;
+    double separatorSize = 0;
+    double titleSize = 0;
+
+    if (orientation == Orientation.portrait) {
+      bigButtonHeight = screenHeight * 0.85;
+      bigButtonWidth = screenWidth * 0.85;
+      separatorSize = screenHeight * 0.02;
+      titleSize = screenHeight * 0.07;
+    } else {
+      bigButtonHeight = screenHeight * 0.80;
+      bigButtonWidth = screenWidth * 0.80;
+      separatorSize = screenHeight * 0.05;
+      titleSize = screenHeight * 0.08;
+    }
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -29,37 +51,7 @@ class _MyAppState extends State<AnimalSpeechPage> {
             fit: BoxFit.cover,
           ),
         ),
-        child: ListView(
-          physics: ClampingScrollPhysics(),
-          children: [
-            Container(
-              margin: EdgeInsets.only(left: 15, top: 15, right: 15),
-              child: Row(
-                children: [
-                  GestureDetector(
-                    child: Icon(
-                      Icons.chevron_left_rounded,
-                      size: 50,
-                    ),
-                    onTap: () {
-                      Navigator.pop(buildContext);
-                    },
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Container(
-              height: 600,
-              child: Column(
-                children: soundPopulator.populateData(
-                    soundsData, MediaQuery.of(context).orientation),
-              ),
-            ),
-          ],
-        ),
+        child: buildSpeechPageLayout(buildContext, soundsData),
       ),
     );
   }

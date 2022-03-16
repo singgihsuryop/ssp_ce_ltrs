@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssp_ce_flutter/learn_speech/speech_page_layout.dart';
 import 'package:ssp_ce_flutter/sound.dart';
 import 'package:ssp_ce_flutter/sound_populator.dart';
 
@@ -16,15 +17,14 @@ class Shape3DSpeechPage extends StatefulWidget {
 }
 
 class _MyAppState extends State<Shape3DSpeechPage> {
-  List<Flexible> dataPerRow = [];
-  final SoundPopulator soundPopulator = SoundPopulator();
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext buildContext) {
     return Scaffold(
-      body: Column(
-        children: soundPopulator.populateData(
-            soundsData, MediaQuery.of(context).orientation),
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.redAccent,
+        ),
+        child: buildSpeechPageLayout(buildContext, soundsData),
       ),
     );
   }
@@ -41,4 +41,6 @@ final List<Sound> soundsData = [
       Colors.purpleAccent),
   Sound("7", "shape3d", "tabung", "tabung.mp3", "", Colors.lime),
   Sound("8", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen),
+  Sound("9", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen),
+  Sound("10", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen),
 ];

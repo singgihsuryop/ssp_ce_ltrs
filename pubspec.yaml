@@ -126,6 +126,7 @@ flutter:
     - assets/images/bg-farm.jpg
     - assets/images/bg-vehicle.jpg
     - assets/sounds/button-tap.wav
+    - assets/sounds/button-tap.wav
     - assets/sounds/bull.mp3
     - assets/sounds/cat.mp3
     - assets/sounds/chicken.mp3

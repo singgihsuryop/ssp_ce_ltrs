@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssp_ce_flutter/learn_speech/speech_page_layout.dart';
 import 'package:ssp_ce_flutter/sound.dart';
 import 'package:ssp_ce_flutter/sound_populator.dart';
 
@@ -24,39 +25,9 @@ class _MyAppState extends State<LetterSpeechPage> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          color: Colors.lightGreen.shade50,
+          color: Colors.deepOrange,
         ),
-        child: ListView(
-          physics: ClampingScrollPhysics(),
-          children: [
-            Container(
-              margin: EdgeInsets.only(left: 15, top: 15, right: 15),
-              child: Row(
-                children: [
-                  GestureDetector(
-                    child: Icon(
-                      Icons.chevron_left_rounded,
-                      size: 50,
-                    ),
-                    onTap: () {
-                      Navigator.pop(buildContext);
-                    },
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Container(
-              height: 600,
-              child: Column(
-                children: soundPopulator.populateData(
-                    soundsData, MediaQuery.of(context).orientation, 3, 7),
-              ),
-            ),
-          ],
-        ),
+        child: buildSpeechPageLayout(buildContext, soundsData, 3, 7),
       ),
     );
   }

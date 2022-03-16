@@ -22,6 +22,27 @@ class _MyAppState extends State<HomePage2> {
     SystemChrome.setEnabledSystemUIMode(
         SystemUiMode.immersiveSticky); //Fullscreen display
 
+    double screenWidth = MediaQuery.of(buildContext).size.width;
+    double screenHeight = MediaQuery.of(buildContext).size.height;
+    Orientation orientation = MediaQuery.of(buildContext).orientation;
+
+    double bigButtonHeight = 0;
+    double bigButtonWidth = 0;
+    double separatorSize = 0;
+    double titleSize = 0;
+
+    if (orientation == Orientation.portrait) {
+      bigButtonHeight = screenHeight * 0.85;
+      bigButtonWidth = screenWidth * 0.85;
+      separatorSize = screenHeight * 0.02;
+      titleSize = screenHeight * 0.07;
+    } else {
+      bigButtonHeight = screenHeight * 0.75;
+      bigButtonWidth = screenWidth * 0.80;
+      separatorSize = screenHeight * 0.05;
+      titleSize = screenHeight * 0.08;
+    }
+
     return MaterialApp(
       home: Scaffold(
         body: Container(
@@ -31,32 +52,35 @@ class _MyAppState extends State<HomePage2> {
               fit: BoxFit.cover,
             ),
           ),
-          child: ListView(
-            physics: ClampingScrollPhysics(),
+          child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(left: 15, top: 15, right: 15),
+                height: titleSize,
+                margin: EdgeInsets.only(
+                    left: separatorSize,
+                    top: separatorSize,
+                    right: separatorSize),
                 child: Row(
                   children: [
                     Icon(
                       Icons.account_circle_rounded,
-                      size: 50,
+                      size: titleSize,
                     ),
                     Text(
                       "Hello",
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(fontSize: titleSize * 0.8),
                     )
                   ],
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: separatorSize,
               ),
               Container(
-                height: 600,
+                height: bigButtonHeight,
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    padding: EdgeInsets.only(left: 15, right: 6),
+                    padding: EdgeInsets.only(left: separatorSize, right: 6),
                     itemCount: cards1.length,
                     itemBuilder: (context, index) {
                       return Material(
@@ -64,11 +88,17 @@ class _MyAppState extends State<HomePage2> {
                         child: Row(
                           children: [
                             Ink(
-                              height: 600,
-                              width: 344,
+                              height: bigButtonHeight,
+                              width: bigButtonWidth,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(28),
-                                  color: Color(cards1[index].cardBackground)),
+                                  gradient: LinearGradient(
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                      colors: [
+                                        Color(cards1[index].cardBackground),
+                                        Colors.greenAccent
+                                      ])),
                               child: InkWell(
                                 enableFeedback: false,
                                 onTap: () {
@@ -79,16 +109,24 @@ class _MyAppState extends State<HomePage2> {
                                 },
                                 child: Stack(
                                   children: [
-                                    Positioned(
-                                        left: 49,
-                                        top: 65,
-                                        child: Text(cards1[index].cardTitle))
+                                    Positioned.fill(
+                                        child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Padding(
+                                        padding:
+                                            const EdgeInsets.only(bottom: 50),
+                                        child: Text(
+                                          cards1[index].cardTitle,
+                                          style: TextStyle(fontSize: 30),
+                                        ),
+                                      ),
+                                    ))
                                   ],
                                 ),
                               ),
                             ),
                             SizedBox(
-                              width: 10,
+                              width: separatorSize,
                             )
                           ],
                         ),

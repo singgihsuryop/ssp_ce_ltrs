@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssp_ce_flutter/learn_speech/speech_page_layout.dart';
 import 'package:ssp_ce_flutter/sound.dart';
 import 'package:ssp_ce_flutter/sound_populator.dart';
 
@@ -20,11 +21,13 @@ class _MyAppState extends State<Shape2DSpeechPage> {
   final SoundPopulator soundPopulator = SoundPopulator();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext buildContext) {
     return Scaffold(
-      body: Column(
-        children: soundPopulator.populateData(
-            soundsData, MediaQuery.of(context).orientation),
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.blueAccent,
+        ),
+        child: buildSpeechPageLayout(buildContext, soundsData),
       ),
     );
   }
