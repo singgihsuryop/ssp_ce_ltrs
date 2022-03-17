@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ssp_ce_flutter/component_wrapper.dart';
+import 'package:ssp_ce_flutter/constants.dart';
 import 'package:ssp_ce_flutter/model/card1_model.dart';
 import 'package:ssp_ce_flutter/speech_home_page.dart';
 
@@ -96,8 +97,10 @@ class _MyAppState extends State<HomePage2> {
                                       begin: Alignment.topLeft,
                                       end: Alignment.bottomRight,
                                       colors: [
-                                        Color(cards1[index].cardBackground),
+                                        Color(cards1[index].cardBackground)
+                                            .withOpacity(CARD_OPACITY),
                                         Colors.greenAccent
+                                            .withOpacity(CARD_OPACITY)
                                       ])),
                               child: InkWell(
                                 enableFeedback: false,

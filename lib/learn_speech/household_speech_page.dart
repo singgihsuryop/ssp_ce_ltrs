@@ -34,21 +34,20 @@ final List<Sound> soundsData = [
   Sound("21", "household", "keran", "keran.mp3", "tap.png", Colors.purple),
   Sound(
       "22", "household", "bel", "bel.mp3", "bell.png", Colors.lightGreenAccent),
-  Sound("23", "household", "alarm", "alarm.mp3", "alarm.png",
+  Sound("23", "household", "jam weker", "jamweker.mp3", "alarm.png",
       Colors.deepOrangeAccent),
   Sound("24", "household", "toilet", "toilet.mp3", "toilet.png", Colors.amber),
-  Sound("25", "household", "teko mendidih", "teko.mp3", "kettle.png",
+  Sound("25", "household", "teko", "teko.mp3", "kettle.png",
       Colors.lightBlueAccent),
-  Sound("26", "household", "potong pisau", "pisau.mp3", "knife.png",
+  Sound("26", "household", "pisau", "pisau.mp3", "knife.png",
       Colors.indigoAccent),
-/*  Sound("27", "household", "penyedot debu", "", "elephant.png",
-      Colors.amberAccent),*/
-  /*
-  Sound("26", "household", "wind", "", "wind.png",
+  Sound("27", "household", "penyedot debu", "penyedotdebu.mp3",
+      "penyedotdebu.png", Colors.amberAccent),
+  Sound("28", "household", "kulkas", "kulkas.mp3", "kulkas.png",
       Colors.deepOrangeAccent),
-  Sound(
-      "29", "household", "saklar", "", "hamster.png", Colors.deepPurple),
-  Sound("30", "household", "weker kikuk", "", "lion.png", Colors.brown)*/
+  Sound("29", "household", "saklar", "saklar.mp3", "saklar.png",
+      Colors.deepPurple),
+  Sound("30", "household", "kompor", "kompor.mp3", "kompor.png", Colors.brown)
 ];
 
-// bor, gerinda, gergaji mesin, paku,
+// bor, gerinda, gergaji mesin, paku, kunci

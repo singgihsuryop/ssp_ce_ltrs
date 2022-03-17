@@ -107,6 +107,7 @@ flutter:
     - assets/images/horse.png
     - assets/images/lion.png
     - assets/images/sheep.png
+
     - assets/images/ambulance.png
     - assets/images/bicycle.png
     - assets/images/bus.png
@@ -117,16 +118,20 @@ flutter:
     - assets/images/police-car.png
     - assets/images/ship.png
     - assets/images/train.png
+
     - assets/images/alarm.png
     - assets/images/bell.png
     - assets/images/kettle.png
     - assets/images/knife.png
     - assets/images/tap.png
     - assets/images/toilet.png
+
     - assets/images/bg-farm.jpg
     - assets/images/bg-vehicle.jpg
+
     - assets/sounds/button-tap.wav
     - assets/sounds/button-tap.wav
+
     - assets/sounds/bull.mp3
     - assets/sounds/cat.mp3
     - assets/sounds/chicken.mp3
@@ -143,6 +148,7 @@ flutter:
     - assets/sounds/rooster.mp3
     - assets/sounds/sheep.mp3
     - assets/sounds/turkey.mp3
+
     - assets/sounds/speech/alarm.mp3
     - assets/sounds/speech/ambulans.mp3
     - assets/sounds/speech/anjing.mp3
@@ -156,6 +162,7 @@ flutter:
     - assets/sounds/speech/harimau.mp3
     - assets/sounds/speech/helikopter.mp3
     - assets/sounds/speech/kambing.mp3
+
     - assets/sounds/speech/kapal.mp3
     - assets/sounds/speech/keran.mp3
     - assets/sounds/speech/kereta-api.mp3
@@ -165,10 +172,86 @@ flutter:
     - assets/sounds/speech/mobil-polisi.mp3
     - assets/sounds/speech/motor.mp3
     - assets/sounds/speech/pesawat.mp3
+    - assets/sounds/speech/traktor.mp3
+
     - assets/sounds/speech/pisau.mp3
     - assets/sounds/speech/sapi.mp3
     - assets/sounds/speech/sepeda.mp3
     - assets/sounds/speech/singa.mp3
     - assets/sounds/speech/teko.mp3
     - assets/sounds/speech/toilet.mp3
-    - assets/sounds/speech/traktor.mp3
+    - assets/sounds/speech/jamweker.mp3
+    - assets/sounds/speech/kompor.mp3
+    - assets/sounds/speech/kulkas.mp3
+    - assets/sounds/speech/kunci.mp3
+    - assets/sounds/speech/penyedotdebu.mp3
+    - assets/sounds/speech/saklar.mp3
+
+    - assets/sounds/speech/a.mp3
+    - assets/sounds/speech/b.mp3
+    - assets/sounds/speech/c.mp3
+    - assets/sounds/speech/d.mp3
+    - assets/sounds/speech/e.mp3
+    - assets/sounds/speech/f.mp3
+    - assets/sounds/speech/g.mp3
+    - assets/sounds/speech/h.mp3
+    - assets/sounds/speech/i.mp3
+    - assets/sounds/speech/j.mp3
+    - assets/sounds/speech/k.mp3
+    - assets/sounds/speech/l.mp3
+    - assets/sounds/speech/m.mp3
+    - assets/sounds/speech/n.mp3
+    - assets/sounds/speech/o.mp3
+    - assets/sounds/speech/p.mp3
+    - assets/sounds/speech/q.mp3
+    - assets/sounds/speech/r.mp3
+    - assets/sounds/speech/s.mp3
+    - assets/sounds/speech/t.mp3
+    - assets/sounds/speech/u.mp3
+    - assets/sounds/speech/v.mp3
+    - assets/sounds/speech/w.mp3
+    - assets/sounds/speech/x.mp3
+    - assets/sounds/speech/y.mp3
+    - assets/sounds/speech/z.mp3
+
+    - assets/sounds/speech/delapan.mp3
+    - assets/sounds/speech/dua.mp3
+    - assets/sounds/speech/empat.mp3
+    - assets/sounds/speech/enam.mp3
+    - assets/sounds/speech/lima.mp3
+    - assets/sounds/speech/nol.mp3
+    - assets/sounds/speech/satu.mp3
+    - assets/sounds/speech/sembilan.mp3
+    - assets/sounds/speech/tiga.mp3
+    - assets/sounds/speech/tujuh.mp3
+
+    - assets/sounds/speech/biru.mp3
+    - assets/sounds/speech/coklat.mp3
+    - assets/sounds/speech/hijau.mp3
+    - assets/sounds/speech/hitam.mp3
+    - assets/sounds/speech/kuning.mp3
+    - assets/sounds/speech/merah.mp3
+    - assets/sounds/speech/oranye.mp3
+    - assets/sounds/speech/pink.mp3
+    - assets/sounds/speech/putih.mp3
+    - assets/sounds/speech/ungu.mp3
+
+    - assets/sounds/speech/belahketupat.mp3
+    - assets/sounds/speech/bujursangkar.mp3
+    - assets/sounds/speech/jajargenjang.mp3
+    - assets/sounds/speech/lingkaran.mp3
+    - assets/sounds/speech/oval.mp3
+    - assets/sounds/speech/persegipanjang.mp3
+    - assets/sounds/speech/segilima.mp3
+    - assets/sounds/speech/segitiga.mp3
+    - assets/sounds/speech/setengahlingkaran.mp3
+    - assets/sounds/speech/trapesium.mp3
+
+    - assets/sounds/speech/balok.mp3
+    - assets/sounds/speech/bola.mp3
+    - assets/sounds/speech/kerucut.mp3
+    - assets/sounds/speech/kubus.mp3
+    - assets/sounds/speech/limas.mp3
+    - assets/sounds/speech/prismasegilima.mp3
+    - assets/sounds/speech/prismasegitiga.mp3
+    - assets/sounds/speech/tabung.mp3

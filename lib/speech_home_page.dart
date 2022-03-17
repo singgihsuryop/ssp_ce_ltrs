@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ssp_ce_flutter/component_wrapper.dart';
+import 'package:ssp_ce_flutter/constants.dart';
 import 'package:ssp_ce_flutter/learn_speech/animal_speech_page.dart';
 import 'package:ssp_ce_flutter/model/card1_model.dart';
 import 'package:ssp_ce_flutter/model/card_speech_model.dart';
@@ -97,9 +98,9 @@ class _MyAppState extends State<SpeechHomePage> {
                                       begin: Alignment.topLeft,
                                       end: Alignment.bottomRight,
                                       colors: [
-                                        Color(
-                                            cardsSpeech[index].cardBackground),
-                                        Colors.blue
+                                        Color(cardsSpeech[index].cardBackground)
+                                            .withOpacity(CARD_OPACITY),
+                                        Colors.blue.withOpacity(CARD_OPACITY)
                                       ])),
                               child: InkWell(
                                 enableFeedback: false,

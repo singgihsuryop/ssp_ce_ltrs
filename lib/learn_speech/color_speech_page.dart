@@ -43,5 +43,5 @@ final List<Sound> soundsData = [
   Sound("7", "color", "hitam", "hitam.mp3", "", Colors.black),
   Sound("8", "color", "putih", "putih.mp3", "", Colors.white),
   Sound("9", "color", "coklat", "coklat.mp3", "", Colors.brown),
-  Sound("10", "color", "pink", "pink.mp3", "lion.png", Colors.pink)
+  Sound("10", "color", "pink", "pink.mp3", "", Colors.pink)
 ];

@@ -42,12 +42,15 @@ final List<Sound> soundsData = [
       Colors.yellow),
   Sound(
       "4", "shape2d", "segilima", "segilima.mp3", "pentagon.png", Colors.green),
-  Sound("5", "shape2d", "setengahlinkaran", "setengahlinkaran.mp3",
+  Sound("5", "shape2d", "setengahlingkaran", "setengahlingkaran.mp3",
       "halfcircle.png", Colors.blue),
   Sound("6", "shape2d", "jajargenjang", "jajargenjang.mp3", "jajargenjang.png",
       Colors.purple),
-  Sound("7", "shape2d", "trapesium", "trapesium.mp3", "", Colors.black),
-  Sound("8", "shape2d", "oval", "oval.mp3", "", Colors.white),
-  Sound("9", "shape2d", "belahketupat", "belahketupat.mp3", "", Colors.brown),
-  Sound("10", "shape2d", "segitiga", "segitiga.mp3", "lion.png", Colors.pink)
+  Sound("7", "shape2d", "trapesium", "trapesium.mp3", "trapesium.png",
+      Colors.black),
+  Sound("8", "shape2d", "oval", "oval.mp3", "oval.png", Colors.white),
+  Sound("9", "shape2d", "belahketupat", "belahketupat.mp3", "belahketupat.png",
+      Colors.brown),
+  Sound(
+      "10", "shape2d", "segitiga", "segitiga.mp3", "segitiga.png", Colors.pink)
 ];

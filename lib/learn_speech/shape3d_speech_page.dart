@@ -24,7 +24,7 @@ class _MyAppState extends State<Shape3DSpeechPage> {
         decoration: BoxDecoration(
           color: Colors.redAccent,
         ),
-        child: buildSpeechPageLayout(buildContext, soundsData),
+        child: buildSpeechPageLayout(buildContext, soundsData, 2, 4),
       ),
     );
   }
@@ -40,7 +40,5 @@ final List<Sound> soundsData = [
   Sound("6", "shape3d", "prismasegilima", "prismasegilima.mp3", "",
       Colors.purpleAccent),
   Sound("7", "shape3d", "tabung", "tabung.mp3", "", Colors.lime),
-  Sound("8", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen),
-  Sound("9", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen),
-  Sound("10", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen),
+  Sound("8", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen)
 ];
