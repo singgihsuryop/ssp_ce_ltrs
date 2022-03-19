@@ -34,14 +34,14 @@ class _MyAppState extends State<ColorSpeechPage> {
 }
 
 final List<Sound> soundsData = [
-  Sound("1", "color", "merah", "merah.mp3", "", Colors.red),
-  Sound("2", "color", "oranye", "oranye.mp3", "", Colors.orange),
-  Sound("3", "color", "kuning", "kuning.mp3", "", Colors.yellow),
-  Sound("4", "color", "hijau", "hijau.mp3", "", Colors.green),
-  Sound("5", "color", "biru", "biru.mp3", "", Colors.blue),
-  Sound("6", "color", "ungu", "ungu.mp3", "", Colors.purple),
-  Sound("7", "color", "hitam", "hitam.mp3", "", Colors.black),
-  Sound("8", "color", "putih", "putih.mp3", "", Colors.white),
-  Sound("9", "color", "coklat", "coklat.mp3", "", Colors.brown),
-  Sound("10", "color", "pink", "pink.mp3", "", Colors.pink)
+  Sound("1", "color", "merah", "merah.mp3", "transparent.png", Colors.red),
+  Sound("2", "color", "oranye", "oranye.mp3", "transparent.png", Colors.orange),
+  Sound("3", "color", "kuning", "kuning.mp3", "transparent.png", Colors.yellow),
+  Sound("4", "color", "hijau", "hijau.mp3", "transparent.png", Colors.green),
+  Sound("5", "color", "biru", "biru.mp3", "transparent.png", Colors.blue),
+  Sound("6", "color", "ungu", "ungu.mp3", "transparent.png", Colors.purple),
+  Sound("7", "color", "hitam", "hitam.mp3", "transparent.png", Colors.black),
+  Sound("8", "color", "putih", "putih.mp3", "transparent.png", Colors.white),
+  Sound("9", "color", "coklat", "coklat.mp3", "transparent.png", Colors.brown),
+  Sound("10", "color", "pink", "pink.mp3", "transparent.png", Colors.pink)
 ];

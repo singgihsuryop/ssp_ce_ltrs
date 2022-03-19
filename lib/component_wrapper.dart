@@ -5,18 +5,26 @@ class ComponentWrapper {
   static ComponentWrapper? _instance;
 
   late AudioPlayer audioPlayer;
+  late AudioPlayer mainSongAudioPlayer;
   late AudioCache audioCache;
   late AudioCache audioCache2;
+  late AudioCache mainSongAudioCache;
   late SoundPopulator soundPopulator;
+  late bool mainSongAudioPlayState;
 
   ComponentWrapper._() {
     audioPlayer = AudioPlayer();
     audioPlayer.setReleaseMode(ReleaseMode.STOP);
 
+    mainSongAudioPlayer = AudioPlayer();
+    mainSongAudioPlayer.setReleaseMode(ReleaseMode.STOP);
+
     audioCache =
         AudioCache(prefix: 'assets/sounds/speech/', fixedPlayer: audioPlayer);
     audioCache2 =
         AudioCache(prefix: 'assets/sounds/', fixedPlayer: audioPlayer);
+    mainSongAudioCache =
+        AudioCache(prefix: 'assets/sounds/', fixedPlayer: mainSongAudioPlayer);
 
     soundPopulator = SoundPopulator();
   }

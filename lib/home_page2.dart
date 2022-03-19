@@ -23,6 +23,9 @@ class _MyAppState extends State<HomePage2> {
     SystemChrome.setEnabledSystemUIMode(
         SystemUiMode.immersiveSticky); //Fullscreen display
 
+    // ComponentWrapper.instance.mainSongAudioCache
+    //     .play("childrens-theme-madness-paranoia-kevin-macLeod.mp3");
+
     double screenWidth = MediaQuery.of(buildContext).size.width;
     double screenHeight = MediaQuery.of(buildContext).size.height;
     Orientation orientation = MediaQuery.of(buildContext).orientation;

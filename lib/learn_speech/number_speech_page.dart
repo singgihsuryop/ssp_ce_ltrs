@@ -31,14 +31,14 @@ class _MyAppState extends State<NumberSpeechPage> {
 }
 
 final List<Sound> soundsData = [
-  Sound("11", "number", "satu", "satu.mp3", "", Colors.lightBlue),
-  Sound("12", "number", "dua", "dua.mp3", "", Colors.lightGreen),
-  Sound("13", "number", "tiga", "tiga.mp3", "", Colors.yellowAccent),
-  Sound("14", "number", "empat", "empat.mp3", "", Colors.redAccent),
-  Sound("15", "number", "lima", "lima.mp3", "", Colors.deepOrange),
-  Sound("16", "number", "enam", "enam.mp3", "", Colors.cyanAccent),
-  Sound("17", "number", "tujuh", "tujuh.mp3", "", Colors.indigoAccent),
-  Sound("18", "number", "delapan", "delapan.mp3", "", Colors.tealAccent),
-  Sound("19", "number", "sembilan", "sembilan.mp3", "", Colors.pinkAccent),
-  Sound("20", "number", "nol", "nol.mp3", "", Colors.limeAccent)
+  Sound("11", "number", "1", "satu.mp3", "", Colors.lightBlue),
+  Sound("12", "number", "2", "dua.mp3", "", Colors.lightGreen),
+  Sound("13", "number", "3", "tiga.mp3", "", Colors.yellowAccent),
+  Sound("14", "number", "4", "empat.mp3", "", Colors.redAccent),
+  Sound("15", "number", "5", "lima.mp3", "", Colors.deepOrange),
+  Sound("16", "number", "6", "enam.mp3", "", Colors.cyanAccent),
+  Sound("17", "number", "7", "tujuh.mp3", "", Colors.indigoAccent),
+  Sound("18", "number", "8", "delapan.mp3", "", Colors.tealAccent),
+  Sound("19", "number", "9", "sembilan.mp3", "", Colors.pinkAccent),
+  Sound("20", "number", "0", "nol.mp3", "", Colors.limeAccent)
 ];

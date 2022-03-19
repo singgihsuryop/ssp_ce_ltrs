@@ -41,13 +41,12 @@ final List<Sound> soundsData = [
       Colors.lightBlueAccent),
   Sound("26", "household", "pisau", "pisau.mp3", "knife.png",
       Colors.indigoAccent),
-  Sound("27", "household", "penyedot debu", "penyedotdebu.mp3",
-      "penyedotdebu.png", Colors.amberAccent),
-  Sound("28", "household", "kulkas", "kulkas.mp3", "kulkas.png",
+  Sound("27", "household", "sapu", "sapu.mp3", "broom.png", Colors.amberAccent),
+  Sound("28", "household", "kulkas", "kulkas.mp3", "refrigerator.png",
       Colors.deepOrangeAccent),
-  Sound("29", "household", "saklar", "saklar.mp3", "saklar.png",
+  Sound("29", "household", "saklar", "saklar.mp3", "switch.png",
       Colors.deepPurple),
-  Sound("30", "household", "kompor", "kompor.mp3", "kompor.png", Colors.brown)
+  Sound("30", "household", "kompor", "kompor.mp3", "stove.png", Colors.brown)
 ];
 
 // bor, gerinda, gergaji mesin, paku, kunci

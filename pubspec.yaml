@@ -95,6 +95,9 @@ flutter:
         - asset: fonts/CrashLandingBB.ttf
         - asset: fonts/CrashLandingBB_ital.ttf
           style: italic
+    - family: ChocolateBar
+      fonts:
+        - asset: fonts/ChocolateBarDemo.otf
 
   assets:
     - assets/images/cat.png
@@ -125,12 +128,19 @@ flutter:
     - assets/images/knife.png
     - assets/images/tap.png
     - assets/images/toilet.png
+    - assets/images/stove.png
+    - assets/images/refrigerator.png
+    - assets/images/switch.png
+    - assets/images/broom.png
 
     - assets/images/bg-farm.jpg
     - assets/images/bg-vehicle.jpg
 
+    - assets/images/transparent.png
+
     - assets/sounds/button-tap.wav
     - assets/sounds/button-tap.wav
+    - assets/sounds/childrens-theme-madness-paranoia-kevin-macLeod.mp3
 
     - assets/sounds/bull.mp3
     - assets/sounds/cat.mp3
@@ -186,6 +196,7 @@ flutter:
     - assets/sounds/speech/kunci.mp3
     - assets/sounds/speech/penyedotdebu.mp3
     - assets/sounds/speech/saklar.mp3
+    - assets/sounds/speech/sapu.mp3
 
     - assets/sounds/speech/a.mp3
     - assets/sounds/speech/b.mp3

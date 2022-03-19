@@ -104,11 +104,15 @@ class _MyAppState extends State<SpeechHomePage> {
                                       ])),
                               child: InkWell(
                                 enableFeedback: false,
-                                onTap: () {
+                                onTap: () async {
                                   ComponentWrapper.instance.audioCache2
                                       .play("button-tap.wav");
-                                  Navigator.pushNamed(buildContext,
+                                  //  ComponentWrapper.instance.mainSongAudioPlayer
+                                  //  .stop();
+                                  await Navigator.pushNamed(buildContext,
                                       cardsSpeech[index].cardPage);
+                                  // ComponentWrapper.instance.mainSongAudioCache.play(
+                                  //  "childrens-theme-madness-paranoia-kevin-macLeod.mp3");
                                 },
                                 child: Stack(
                                   children: [
