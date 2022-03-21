@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ssp_ce_flutter/component_wrapper.dart';
 import 'package:ssp_ce_flutter/sound.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SoundPopulator {
   final int DEF_NUM_BUTTON_PER_ROW_PORTRAIT = 2;
@@ -25,20 +26,38 @@ class SoundPopulator {
 
     int counter = 0;
     for (Sound sound in soundsData) {
-      Widget displayImage = Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/images/" + sound.imagePath),
-              fit: BoxFit.contain),
-        ),
-      );
+      Widget displayImageOrText;
+      if (sound.displayType == "text") {
+        // display text
+        print("displat text");
+        displayImageOrText = Container(
+          child: SizedBox.expand(
+              child: Text(
+            sound.soundName.toUpperCase(),
+            textAlign: TextAlign.center,
+            style: TextStyle(fontFamily: "ChocolateBar", fontSize: 30),
+          )),
+        );
+      } else if (sound.displayType == "image") {
+        //displat image
+        print("displat image");
+        displayImageOrText = Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/images/" + sound.imagePath),
+                fit: BoxFit.contain),
+          ),
+        );
+      } else {
+        //displat svg
+        print("displat svg");
+        displayImageOrText = Container(
+          child: SizedBox.expand(
+              child: SvgPicture.asset("assets/images/" + sound.imagePath)),
 
-      Widget displaytext = Container(
-        child: Text(
-          sound.soundName.toUpperCase(),
-          style: TextStyle(fontFamily: "ChocolateBar", fontSize: 30),
-        ),
-      );
+          //color: Colors.black,
+        );
+      }
 
       data.add(Flexible(
         flex: 1,
@@ -66,8 +85,7 @@ class SoundPopulator {
                   print('Tapped onTapCancel');
                   audioCache.play(sound.soundPath);
                 },
-                child:
-                    (sound.imagePath.isNotEmpty ? displayImage : displaytext),
+                child: displayImageOrText,
               ),
               // ),
               onPressed: () {/* use onTapDown from GestureDetector */},
@@ -142,32 +160,38 @@ class SoundPopulator {
         children: List.generate(
           soundsData.length,
           (index) {
-            Widget displayImage = Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(
-                        "assets/images/" + soundsData[index].imagePath),
-                    fit: BoxFit.contain),
-              ),
-            );
-
-            Widget displayITxts = Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(
-                        "assets/images/" + soundsData[index].imagePath),
-                    fit: BoxFit.contain),
-              ),
-            );
-
-            Widget displaytext = Container(
-              child: SizedBox.expand(
-                  child: Text(
-                soundsData[index].soundName.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: TextStyle(fontFamily: "ChocolateBar", fontSize: 30),
-              )),
-            );
+            Widget displayImageOrText;
+            if (soundsData[index].displayType == "text") {
+              // display text
+              print("displat text");
+              displayImageOrText = Container(
+                child: SizedBox.expand(
+                    child: Text(
+                  soundsData[index].soundName.toUpperCase(),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontFamily: "ChocolateBar", fontSize: 30),
+                )),
+              );
+            } else if (soundsData[index].displayType == "image") {
+              //displat image
+              print("displat image");
+              displayImageOrText = Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(
+                          "assets/images/" + soundsData[index].imagePath),
+                      fit: BoxFit.contain),
+                ),
+              );
+            } else {
+              //displat svg
+              print("displat svg");
+              displayImageOrText = Container(
+                child: SvgPicture.asset(
+                    "assets/images/" + soundsData[index].imagePath),
+                color: Colors.black,
+              );
+            }
 
             return MaterialButton(
               padding: EdgeInsets.all(8.0),
@@ -190,9 +214,7 @@ class SoundPopulator {
                   print('Tapped onTapCancel');
                   audioCache.play(soundsData[index].soundPath);
                 },
-                child: (soundsData[index].imagePath.isNotEmpty
-                    ? displayImage
-                    : displaytext),
+                child: displayImageOrText,
               ),
               // ),
               onPressed: () {/* use onTapDown from GestureDetector */},

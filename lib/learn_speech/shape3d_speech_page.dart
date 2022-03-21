@@ -31,14 +31,20 @@ class _MyAppState extends State<Shape3DSpeechPage> {
 }
 
 final List<Sound> soundsData = [
-  Sound("1", "shape3d", "kubus", "kubus.mp3", "", Colors.redAccent),
-  Sound("2", "shape3d", "balok", "balok.mp3", "", Colors.orangeAccent),
-  Sound("3", "shape3d", "kerucut", "kerucut.mp3", "", Colors.yellowAccent),
-  Sound("4", "shape3d", "prismasegitiga", "prismasegitiga.mp3", "",
-      Colors.greenAccent),
-  Sound("5", "shape3d", "limas", "limas.mp3", "", Colors.blueAccent),
-  Sound("6", "shape3d", "prismasegilima", "prismasegilima.mp3", "",
-      Colors.purpleAccent),
-  Sound("7", "shape3d", "tabung", "tabung.mp3", "", Colors.lime),
-  Sound("8", "shape3d", "bola", "bola.mp3", "", Colors.lightGreen)
+  Sound.svgDisplay("1", "shape3d", "kubus", "kubus.mp3", "xxx.svg",
+      Colors.redAccent, Colors.black),
+  Sound.svgDisplay("2", "shape3d", "balok", "balok.mp3", "xxx.svg",
+      Colors.orangeAccent, Colors.black),
+  Sound.svgDisplay("3", "shape3d", "kerucut", "kerucut.mp3", "xxx.svg",
+      Colors.yellowAccent, Colors.black),
+  Sound.svgDisplay("4", "shape3d", "prismasegitiga", "prismasegitiga.mp3",
+      "xxx.svg", Colors.greenAccent, Colors.black),
+  Sound.svgDisplay("5", "shape3d", "limas", "limas.mp3", "xxx.svg",
+      Colors.blueAccent, Colors.black),
+  Sound.svgDisplay("6", "shape3d", "prismasegilima", "prismasegilima.mp3",
+      "xxx.svg", Colors.purpleAccent, Colors.black),
+  Sound.svgDisplay("7", "shape3d", "tabung", "tabung.mp3", "xxx.svg",
+      Colors.lime, Colors.black),
+  Sound.svgDisplay("8", "shape3d", "bola", "bola.mp3", "xxx.svg",
+      Colors.lightGreen, Colors.black)
 ];

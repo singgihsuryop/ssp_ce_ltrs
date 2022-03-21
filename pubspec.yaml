@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   audioplayers: ^0.20.1
+  flutter_svg: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -132,6 +133,16 @@ flutter:
     - assets/images/refrigerator.png
     - assets/images/switch.png
     - assets/images/broom.png
+
+    - assets/images/circle.svg
+    - assets/images/diamond.svg
+    - assets/images/oval.svg
+    - assets/images/parallelogram.svg
+    - assets/images/pentagon.svg
+    - assets/images/rectangle.svg
+    - assets/images/square.svg
+    - assets/images/trapezoid.svg
+    - assets/images/triangle.svg
 
     - assets/images/bg-farm.jpg
     - assets/images/bg-vehicle.jpg

@@ -31,22 +31,26 @@ class _MyAppState extends State<HouseholdSpeechPage> {
 }
 
 final List<Sound> soundsData = [
-  Sound("21", "household", "keran", "keran.mp3", "tap.png", Colors.purple),
-  Sound(
+  Sound.imageDisplay(
+      "21", "household", "keran", "keran.mp3", "tap.png", Colors.purple),
+  Sound.imageDisplay(
       "22", "household", "bel", "bel.mp3", "bell.png", Colors.lightGreenAccent),
-  Sound("23", "household", "jam weker", "jamweker.mp3", "alarm.png",
-      Colors.deepOrangeAccent),
-  Sound("24", "household", "toilet", "toilet.mp3", "toilet.png", Colors.amber),
-  Sound("25", "household", "teko", "teko.mp3", "kettle.png",
+  Sound.imageDisplay("23", "household", "jam weker", "jamweker.mp3",
+      "alarm.png", Colors.deepOrangeAccent),
+  Sound.imageDisplay(
+      "24", "household", "toilet", "toilet.mp3", "toilet.png", Colors.amber),
+  Sound.imageDisplay("25", "household", "teko", "teko.mp3", "kettle.png",
       Colors.lightBlueAccent),
-  Sound("26", "household", "pisau", "pisau.mp3", "knife.png",
+  Sound.imageDisplay("26", "household", "pisau", "pisau.mp3", "knife.png",
       Colors.indigoAccent),
-  Sound("27", "household", "sapu", "sapu.mp3", "broom.png", Colors.amberAccent),
-  Sound("28", "household", "kulkas", "kulkas.mp3", "refrigerator.png",
-      Colors.deepOrangeAccent),
-  Sound("29", "household", "saklar", "saklar.mp3", "switch.png",
+  Sound.imageDisplay(
+      "27", "household", "sapu", "sapu.mp3", "broom.png", Colors.amberAccent),
+  Sound.imageDisplay("28", "household", "kulkas", "kulkas.mp3",
+      "refrigerator.png", Colors.deepOrangeAccent),
+  Sound.imageDisplay("29", "household", "saklar", "saklar.mp3", "switch.png",
       Colors.deepPurple),
-  Sound("30", "household", "kompor", "kompor.mp3", "stove.png", Colors.brown)
+  Sound.imageDisplay(
+      "30", "household", "kompor", "kompor.mp3", "stove.png", Colors.brown)
 ];
 
 // bor, gerinda, gergaji mesin, paku, kunci
