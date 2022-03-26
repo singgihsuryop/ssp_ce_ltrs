@@ -144,10 +144,27 @@ flutter:
     - assets/images/trapezoid.svg
     - assets/images/triangle.svg
 
+    - assets/images/shape3d_ball.svg
+    - assets/images/shape3d_block.svg
+    - assets/images/shape3d_cone.svg
+    - assets/images/shape3d_cube.svg
+    - assets/images/shape3d_cylinder.svg
+    - assets/images/shape3d_cylinder-5.svg
+    - assets/images/shape3d_pyramid.svg
+    - assets/images/shape3d_triangle_3d.svg
+
     - assets/images/bg-farm.jpg
     - assets/images/bg-vehicle.jpg
 
     - assets/images/transparent.png
+    - assets/images/head_img_animal.png
+    - assets/images/head_img_color.png
+    - assets/images/head_img_household.png
+    - assets/images/head_img_letter.png
+    - assets/images/head_img_number.png
+    - assets/images/head_img_shape2d.png
+    - assets/images/head_img_shape3d.png
+    - assets/images/head_img_vehicle.png
 
     - assets/sounds/button-tap.wav
     - assets/sounds/button-tap.wav

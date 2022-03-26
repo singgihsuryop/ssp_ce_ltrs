@@ -3,6 +3,7 @@ import 'package:ssp_ce_flutter/component_wrapper.dart';
 import 'package:ssp_ce_flutter/sound.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ssp_ce_flutter/widget_mod.dart';
 
 class SoundPopulator {
   final int DEF_NUM_BUTTON_PER_ROW_PORTRAIT = 2;
@@ -29,18 +30,21 @@ class SoundPopulator {
       Widget displayImageOrText;
       if (sound.displayType == "text") {
         // display text
-        print("displat text");
+        print("display text: " + sound.soundName);
         displayImageOrText = Container(
           child: SizedBox.expand(
               child: Text(
             sound.soundName.toUpperCase(),
             textAlign: TextAlign.center,
-            style: TextStyle(fontFamily: "ChocolateBar", fontSize: 30),
+            style: TextStyle(
+                fontFamily: "ChocolateBar",
+                fontSize: 30,
+                shadows: BORDERED_TEXT_SHADOW),
           )),
         );
       } else if (sound.displayType == "image") {
         //displat image
-        print("displat image");
+        print("display image: " + sound.imagePath);
         displayImageOrText = Container(
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -50,7 +54,7 @@ class SoundPopulator {
         );
       } else {
         //displat svg
-        print("displat svg");
+        print("display svg: " + sound.imagePath);
         displayImageOrText = Container(
           child: SizedBox.expand(
               child: SvgPicture.asset("assets/images/" + sound.imagePath)),
@@ -119,6 +123,20 @@ class SoundPopulator {
         counter = 0;
       }
     }
+
+    //add empty flex to show remain button
+    while (data.isNotEmpty && counter != numButtonEachRow) {
+      data.add(Flexible(flex: 1, child: Container()));
+      counter++;
+    }
+    if (data.isNotEmpty) {
+      allDataGroupedEachRow.add(Flexible(
+          flex: 1,
+          child: Row(
+            children: data,
+          )));
+    }
+
     return allDataGroupedEachRow;
   }
 
@@ -163,18 +181,23 @@ class SoundPopulator {
             Widget displayImageOrText;
             if (soundsData[index].displayType == "text") {
               // display text
-              print("displat text");
+              print(
+                  "display text: " + soundsData[index].soundName.toUpperCase());
+
               displayImageOrText = Container(
                 child: SizedBox.expand(
                     child: Text(
                   soundsData[index].soundName.toUpperCase(),
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontFamily: "ChocolateBar", fontSize: 30),
+                  style: TextStyle(
+                      fontFamily: "ChocolateBar",
+                      fontSize: 30,
+                      shadows: BORDERED_TEXT_SHADOW),
                 )),
               );
             } else if (soundsData[index].displayType == "image") {
               //displat image
-              print("displat image");
+              print("display image: " + soundsData[index].imagePath);
               displayImageOrText = Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
@@ -185,7 +208,7 @@ class SoundPopulator {
               );
             } else {
               //displat svg
-              print("displat svg");
+              print("display svg: " + soundsData[index].imagePath);
               displayImageOrText = Container(
                 child: SvgPicture.asset(
                     "assets/images/" + soundsData[index].imagePath),

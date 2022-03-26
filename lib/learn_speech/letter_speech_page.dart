@@ -27,7 +27,7 @@ class _MyAppState extends State<LetterSpeechPage> {
         decoration: BoxDecoration(
           color: Colors.deepOrange,
         ),
-        child: buildSpeechPageLayout2(buildContext, soundsData, 3, 7),
+        child: buildSpeechPageLayout(buildContext, soundsData, 3, 7),
       ),
     );
   }

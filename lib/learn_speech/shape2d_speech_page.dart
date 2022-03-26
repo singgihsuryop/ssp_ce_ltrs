@@ -38,12 +38,8 @@ final List<Sound> soundsData = [
       "square.svg", Colors.red, Colors.black),
   Sound.svgDisplay("2", "shape2d", "lingkaran", "lingkaran.mp3", "circle.svg",
       Colors.orange, Colors.black),
-  Sound.svgDisplay("3", "shape2d", "persegipanjang", "persegipanjang.mp3",
-      "rectangle.svg", Colors.yellow, Colors.black),
   Sound.svgDisplay("4", "shape2d", "segilima", "segilima.mp3", "pentagon.svg",
       Colors.green, Colors.black),
-  Sound.svgDisplay("5", "shape2d", "setengahlingkaran", "setengahlingkaran.mp3",
-      "halfcircle.svg", Colors.blue, Colors.black),
   Sound.svgDisplay("6", "shape2d", "jajargenjang", "jajargenjang.mp3",
       "parallelogram.svg", Colors.purple, Colors.black),
   Sound.svgDisplay("7", "shape2d", "trapesium", "trapesium.mp3",
@@ -53,5 +49,11 @@ final List<Sound> soundsData = [
   Sound.svgDisplay("9", "shape2d", "belahketupat", "belahketupat.mp3",
       "diamond.svg", Colors.brown, Colors.black),
   Sound.svgDisplay("10", "shape2d", "segitiga", "segitiga.mp3", "triangle.svg",
-      Colors.pink, Colors.black)
+      Colors.pink, Colors.black),
+
+/*  Sound.svgDisplay("3", "shape2d", "persegipanjang", "persegipanjang.mp3",
+      "rectangle.svg", Colors.yellow, Colors.black),
+  Sound.svgDisplay("5", "shape2d", "setengahlingkaran", "setengahlingkaran.mp3",
+      "halfcircle.svg", Colors.blue, Colors.black),
+*/
 ];

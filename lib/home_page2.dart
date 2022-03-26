@@ -5,6 +5,7 @@ import 'package:ssp_ce_flutter/component_wrapper.dart';
 import 'package:ssp_ce_flutter/constants.dart';
 import 'package:ssp_ce_flutter/model/card1_model.dart';
 import 'package:ssp_ce_flutter/speech_home_page.dart';
+import 'package:ssp_ce_flutter/widget_mod.dart';
 
 class HomePage2 extends StatefulWidget {
   const HomePage2({Key? key}) : super(key: key);
@@ -72,7 +73,9 @@ class _MyAppState extends State<HomePage2> {
                     ),
                     Text(
                       "Hello",
-                      style: TextStyle(fontSize: titleSize * 0.8),
+                      style: TextStyle(
+                          fontFamily: "ChocolateBar",
+                          fontSize: titleSize * 0.8),
                     )
                   ],
                 ),
@@ -123,7 +126,11 @@ class _MyAppState extends State<HomePage2> {
                                             const EdgeInsets.only(bottom: 50),
                                         child: Text(
                                           cards1[index].cardTitle,
-                                          style: TextStyle(fontSize: 30),
+                                          style: TextStyle(
+                                              fontFamily: "ChocolateBar",
+                                              fontSize: 30,
+                                              color: Colors.white,
+                                              shadows: BORDERED_TEXT_SHADOW),
                                         ),
                                       ),
                                     ))
