@@ -20,15 +20,15 @@ List<Card1Model> cards1 = cardData
 
 var cardData = [
   {
-    "cardImage": "latihan-berbicara.png",
+    "cardImage": "logo_mengenalkata.png",
     "cardTitle": "Latihan Berbicara",
     "cardBackground": 0xFF1E1E99,
     "cardPage": "/speechHomePage"
-  },
+  } /*,
   {
     "cardImage": "new-feature-soon.png",
     "cardTitle": "Informasi lainnya",
     "cardBackground": 0xFFFF70A3,
     "cardPage": ""
-  }
+  }*/
 ];

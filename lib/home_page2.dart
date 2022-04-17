@@ -35,6 +35,7 @@ class _MyAppState extends State<HomePage2> {
     double bigButtonWidth = 0;
     double separatorSize = 0;
     double titleSize = 0;
+    double topPaddingCardImage = 0;
 
     if (orientation == Orientation.portrait) {
       bigButtonHeight = screenHeight * 0.85;
@@ -118,6 +119,21 @@ class _MyAppState extends State<HomePage2> {
                                 },
                                 child: Stack(
                                   children: [
+                                    Positioned.fill(
+                                        child: Align(
+                                      alignment: Alignment.topCenter,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(
+                                            top: topPaddingCardImage),
+                                        child: Container(
+                                          child: Image.asset(
+                                            'assets/images/' +
+                                                cards1[index].cardImage,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    )),
                                     Positioned.fill(
                                         child: Align(
                                       alignment: Alignment.bottomCenter,

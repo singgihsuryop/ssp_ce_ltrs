@@ -165,6 +165,7 @@ flutter:
     - assets/images/head_img_shape2d.png
     - assets/images/head_img_shape3d.png
     - assets/images/head_img_vehicle.png
+    - assets/images/logo_mengenalkata.png
 
     - assets/sounds/button-tap.wav
     - assets/sounds/button-tap.wav

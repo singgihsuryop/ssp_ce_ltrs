@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.singgihsuryop.ssp_ce_flutter">
    <application
-        android:label="Belajar Mengenal Gambar"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Mengenal Kata"
+        android:icon="@mipmap/logo">
         <activity
             android:name=".MainActivity"
             android:exported="true"
