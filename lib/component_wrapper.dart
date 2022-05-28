@@ -1,5 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
-import 'package:ssp_ce_flutter/sound_populator.dart';
+import 'package:ssp_ce_ltrs/sound_populator.dart';
 
 class ComponentWrapper {
   static ComponentWrapper? _instance;

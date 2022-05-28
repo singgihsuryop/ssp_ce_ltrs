@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ssp_ce_flutter/component_wrapper.dart';
-import 'package:ssp_ce_flutter/sound.dart';
+import 'package:ssp_ce_ltrs/component_wrapper.dart';
+import 'package:ssp_ce_ltrs/sound.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ssp_ce_flutter/widget_mod.dart';
+import 'package:ssp_ce_ltrs/widget_mod.dart';
 
 class SoundPopulator {
   final int DEF_NUM_BUTTON_PER_ROW_PORTRAIT = 2;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ssp_ce_flutter/component_wrapper.dart';
-import 'package:ssp_ce_flutter/sound.dart';
-import 'package:ssp_ce_flutter/sound_populator.dart';
+import 'package:ssp_ce_ltrs/component_wrapper.dart';
+import 'package:ssp_ce_ltrs/sound.dart';
+import 'package:ssp_ce_ltrs/sound_populator.dart';
 
 Widget buildSpeechPageLayout(BuildContext buildContext, List<Sound> soundsData,
     [int? numButtonPerRowPortrait, int? numButtonPerRowLandscape]) {

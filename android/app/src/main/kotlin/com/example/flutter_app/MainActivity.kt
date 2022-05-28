@@ -1,4 +1,4 @@
-package com.singgihsuryop.ssp_ce_flutter
+package com.singgihsuryop.ssp_ce_ltrs
 
 import io.flutter.embedding.android.FlutterActivity
 

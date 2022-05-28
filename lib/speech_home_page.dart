@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ssp_ce_flutter/component_wrapper.dart';
-import 'package:ssp_ce_flutter/constants.dart';
-import 'package:ssp_ce_flutter/learn_speech/animal_speech_page.dart';
-import 'package:ssp_ce_flutter/model/card1_model.dart';
-import 'package:ssp_ce_flutter/model/card_speech_model.dart';
-import 'package:ssp_ce_flutter/widget_mod.dart';
+import 'package:ssp_ce_ltrs/component_wrapper.dart';
+import 'package:ssp_ce_ltrs/constants.dart';
+import 'package:ssp_ce_ltrs/learn_speech/animal_speech_page.dart';
+import 'package:ssp_ce_ltrs/model/card1_model.dart';
+import 'package:ssp_ce_ltrs/model/card_speech_model.dart';
+import 'package:ssp_ce_ltrs/widget_mod.dart';
 
 class SpeechHomePage extends StatefulWidget {
   const SpeechHomePage({Key? key}) : super(key: key);

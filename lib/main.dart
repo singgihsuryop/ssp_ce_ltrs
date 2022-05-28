@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:ssp_ce_flutter/home_page.dart';
-import 'package:ssp_ce_flutter/home_page2.dart';
-import 'package:ssp_ce_flutter/learn_speech/animal_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/color_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/household_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/letter_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/number_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/shape2d_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/shape3d_speech_page.dart';
-import 'package:ssp_ce_flutter/learn_speech/vehicle_speech_page.dart';
-import 'package:ssp_ce_flutter/speech_home_page.dart';
+import 'package:ssp_ce_ltrs/home_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/animal_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/color_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/household_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/letter_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/number_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/shape2d_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/shape3d_speech_page.dart';
+import 'package:ssp_ce_ltrs/learn_speech/vehicle_speech_page.dart';
+import 'package:ssp_ce_ltrs/speech_home_page.dart';
 
 void main() {
   runApp(MaterialApp(
     title: 'Belajar',
     initialRoute: 'homePage',
     onGenerateRoute: (settings) {
-      Widget page = HomePage2();
+      Widget page = HomePage();
       switch (settings.name) {
         case '/speechHomePage':
           page = SpeechHomePage();
@@ -50,7 +49,7 @@ void main() {
       return PageRouteBuilder(pageBuilder: (_, __, ___) => page);
     },
     routes: {
-      'homePage': (context) => HomePage2(),
+      'homePage': (context) => HomePage(),
       'speechHomePage': (context) => SpeechHomePage(),
       'animalSpeechPage': (context) => AnimalSpeechPage(),
     },

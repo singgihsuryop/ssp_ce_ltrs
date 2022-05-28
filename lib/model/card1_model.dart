@@ -1,4 +1,4 @@
-import 'package:ssp_ce_flutter/speech_home_page.dart';
+import 'package:ssp_ce_ltrs/speech_home_page.dart';
 
 class Card1Model {
   String cardImage;

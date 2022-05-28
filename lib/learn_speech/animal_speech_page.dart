@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ssp_ce_flutter/component_wrapper.dart';
-import 'package:ssp_ce_flutter/learn_speech/speech_page_layout.dart';
-import 'package:ssp_ce_flutter/sound.dart';
-import 'package:ssp_ce_flutter/sound_populator.dart';
+import 'package:ssp_ce_ltrs/component_wrapper.dart';
+import 'package:ssp_ce_ltrs/learn_speech/speech_page_layout.dart';
+import 'package:ssp_ce_ltrs/sound.dart';
+import 'package:ssp_ce_ltrs/sound_populator.dart';
 
 class AnimalSpeechPage extends StatefulWidget {
   const AnimalSpeechPage({Key? key}) : super(key: key);
