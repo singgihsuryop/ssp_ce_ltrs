@@ -1,4 +1,4 @@
-## Shake Alarm Clock: Privacy policy
+## Child Education - Learn to Recognize Something: Privacy policy
 
 Welcome to the Child Education - Learn to Recognize Something app (Belajar Mengenal Sesuatu)!
 
@@ -13,5 +13,5 @@ If you find any security vulnerability that has been inadvertently caused by me,
 
 Sincerely yours,  
 Singgih Suryo Prasetyo.  
-Jakarta, Indonesia.
+Jakarta, Indonesia. 
 singgihsuryop@gmail.com
